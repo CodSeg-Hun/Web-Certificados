@@ -7301,6 +7301,17 @@ var
 	// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
 	allTypes = ["*/"] + ["*"];
 
+// Helper function to repeatedly remove all <script> tags from input, fixing incomplete multi-character sanitization.
+function removeScriptTags(input) {
+	var result, previous;
+	result = input;
+	do {
+		previous = result;
+		result = result.replace(rscript, "");
+	} while (result !== previous);
+	return result;
+}
+
 // #8138, IE may throw an exception when accessing
 // a field from window.location if document.domain has been set
 try {
@@ -7463,7 +7474,7 @@ jQuery.fn.load = function( url, params, callback ) {
 
 				// inject the contents of the document in, removing the scripts
 				// to avoid any 'Permission Denied' errors in IE
-				.append( responseText.replace( rscript, "" ) )
+				.append( removeScriptTags(responseText) )
 
 				// Locate the specified elements
 				.find( selector ) :
