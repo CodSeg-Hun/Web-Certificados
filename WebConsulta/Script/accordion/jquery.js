@@ -2441,7 +2441,17 @@ jQuery.fn.extend({
 						jQuery("<div/>")
 							// inject the contents of the document in, removing the scripts
 							// to avoid any 'Permission Denied' errors in IE
-							.append(res.responseText.replace(/<script[\s\S]*?\/script>/g, ""))
+							// Patch: sanitize responseText by iteratively removing <script> tags
+							(function() {
+								var sanitized = res.responseText;
+								var re = /<script[\s\S]*?\/script>/gi;
+								var prev;
+								do {
+									prev = sanitized;
+									sanitized = sanitized.replace(re, "");
+								} while (sanitized !== prev);
+								return this.append(sanitized);
+							}).call(this)
 
 							// Locate the specified elements
 							.find(selector) :
