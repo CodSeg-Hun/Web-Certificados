@@ -26,7 +26,14 @@
 			useElement: ""
 		}; 
 			
-		var options = $.extend(defaults, options);  
+		var options = $.extend(defaults, options);
+
+		// Validate tooltipId to avoid possible XSS via unsafe IDs
+		var safeIdPattern = /^[A-Za-z0-9_-]+$/;
+		if (!safeIdPattern.test(options.tooltipId)) {
+			throw new Error("Invalid tooltipId: only letters, numbers, underscore, and hyphen are allowed.");
+		}
+
 		var content;
 				
 		this.each(function() {  				
