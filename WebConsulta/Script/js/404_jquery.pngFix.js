@@ -35,6 +35,16 @@
 
 jQuery.fn.pngFix = function(settings) {
 
+    // Helper: Escape HTML entities
+    function escapeHtml(text) {
+        return String(text)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+    }
+
 	// Settings
 	settings = jQuery.extend({
 		blankgif: 'blank.gif'
@@ -53,10 +63,10 @@ jQuery.fn.pngFix = function(settings) {
 
 			var prevStyle = '';
 			var strNewHTML = '';
-			var imgId = (jQuery(this).attr('id')) ? 'id="' + jQuery(this).attr('id') + '" ' : '';
-			var imgClass = (jQuery(this).attr('class')) ? 'class="' + jQuery(this).attr('class') + '" ' : '';
-			var imgTitle = (jQuery(this).attr('title')) ? 'title="' + jQuery(this).attr('title') + '" ' : '';
-			var imgAlt = (jQuery(this).attr('alt')) ? 'alt="' + jQuery(this).attr('alt') + '" ' : '';
+			var imgId = (jQuery(this).attr('id')) ? 'id="' + escapeHtml(jQuery(this).attr('id')) + '" ' : '';
+			var imgClass = (jQuery(this).attr('class')) ? 'class="' + escapeHtml(jQuery(this).attr('class')) + '" ' : '';
+			var imgTitle = (jQuery(this).attr('title')) ? 'title="' + escapeHtml(jQuery(this).attr('title')) + '" ' : '';
+			var imgAlt = (jQuery(this).attr('alt')) ? 'alt="' + escapeHtml(jQuery(this).attr('alt')) + '" ' : '';
 			var imgAlign = (jQuery(this).attr('align')) ? 'float:' + jQuery(this).attr('align') + ';' : '';
 			var imgHand = (jQuery(this).parent().attr('href')) ? 'cursor:hand;' : '';
 			if (this.style.border) {
