@@ -1,0 +1,81 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Administracion.Master.vb" Inherits="WebConsulta.Administracion" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register Assembly="DevExpress.Web.ASPxEditors.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <link href="../Styles/newstyle.css" rel="stylesheet" type="text/css" />
+        <link href="../Styles/tabestyles.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="../images/favicon.ico" />
+        <link rel="icon" type="image/gif" href="../images/animated_favicon1.gif" />
+        <title>Consulta General</title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body oncontextmenu="return false">
+        <form id="form1" runat="server">
+            <div id="master_container">
+                <div id="header">
+                    <div class="seccion_header_principal">
+                        <div class="seccion_header_principal_logo">
+                        </div>
+                        <div class="seccion_header_principal_logo">
+                           <%-- <br /><br />
+                            <asp:Image ID="Image1" runat="server" Height="33px" ImageUrl="~/Images/casabaca.png" Style="margin-top: 3px" Width="180px" />--%>
+                        </div>
+                        <div class="seccion_header_principal_usuario">
+                            <div class="user_icon">
+                                <asp:Image ID="imgusericon" runat="server" Height="43px" ImageUrl="~/Images/user_icon.png" Style="margin-top: 3px" Width="41px" />
+                            </div>
+                            <div class="user_nombre">
+                                <div class="user_nombre_default">
+                                    <asp:Label ID="lbl_default" runat="server" Font-Bold="True">Bienvenido(a)</asp:Label>
+                                </div>
+                                <div class="user_nombre_data">
+                                    <asp:Label ID="lbl_usuario_login" runat="server" Font-Bold="True" Font-Size="Small"></asp:Label>
+                                </div>
+                                <div class="user_nombre_data">
+                                    <asp:Label ID="lbl_usuario_canal" runat="server" Font-Bold="True" Font-Size="Small"></asp:Label>
+                                </div>
+                            </div>
+                            <div class="user_salir">
+                               <%-- <telerik:RadButton ID="bnt_salir" runat="server" Height="30px" Width="60px" 
+                                      ToolTip="Salir del Sistema" Image-ImageUrl="../Images/logout.png" >
+                                </telerik:RadButton>--%>
+
+                                <%--<dx:ASPxButton ID="BntSalir" runat="server" Height="30px" ToolTip="Salir del Sistema" Width="60px" EnableDefaultAppearance="False">
+                                    <Image Url="../Images/logout.png" />
+                                </dx:ASPxButton>--%>
+                                <asp:ImageButton ID="BntSalir" runat="server" Height="30px" ToolTip="Salir del Sistema" Width="60px" EnableDefaultAppearance="False" ImageUrl="../Images/logout.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seccion_header_menu">
+                        <telerik:RadMenu ID="RadMenu1" runat="server" BorderStyle="None" Font-Size="Medium" Style="top: 0px; left: 0px" EnableRoundedCorners="True" CssClass="nover" Skin="Black">
+                            <Items>
+                                <telerik:RadMenuItem runat="server" NavigateUrl="~/Forms/PrincipalAdministracion.aspx" Text="Inicio" Value="1" Target="_parent">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Consultas" Value="2">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" Text="Certificados" NavigateUrl="~/Forms/ConsultaDatos.aspx" Value="3">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Ayuda">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" Text="Modificar Contraseña" NavigateUrl="~/Forms/CambiarContraseña.aspx">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenu>
+                    </div>
+                </div>
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

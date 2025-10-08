@@ -1,0 +1,407 @@
+﻿/* File Created: noviembre 20, 2019 */
+
+.seccion_content_maestra_concesionario
+{
+    margin: 5px auto;
+    width: 950px;
+    height: 700px; /* height: 515px; border: solid 1px blue*/
+    
+}
+
+.content_datosrenovacionsubtitulo_bloque
+{
+    float: left;
+    width: 980px;
+    border-width: 0;
+    clear: both;
+    padding: 0 10px 10px 10px;
+     
+}
+
+
+.tab_general
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small;
+    text-align: center;
+    background-color: #007067;
+    background: url('../Images/turquesa.png') !important;
+}
+
+
+.content_filtrar
+{
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+     /*padding: 15px 10px 10px 10px;*/
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.21) 0%, rgba(0,0,0,0) 18%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.21)), color-stop(18%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.21) 0%,rgba(0,0,0,0) 18%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.21) 0%,rgba(0,0,0,0) 18%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.21) 0%,rgba(0,0,0,0) 18%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.21) 0%,rgba(0,0,0,0) 18%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	
+}
+
+.content_detalle
+{
+    float: left;
+    height: 510px;
+    width: 100%;
+}
+
+.column04_cell_button
+{
+    float: left;
+    height: 24px;
+    width: 60px;
+    margin: 2px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: left;
+}
+
+
+.conten_control
+{
+    float: left;
+    height: 25px;
+    width: 330px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-position: right top;
+    margin-top: 10px;
+}
+
+.sec_RadTextBox
+{
+    float: left;
+    height: 20px;
+    width: 280px;
+    padding: 5px 0;
+    margin-right: 5px;
+    /*margin-top: 10px;*/
+}
+
+.text_maestra_seccion_label_filter
+{
+    float: left;
+    width: 100px;
+    height: 20px;
+    font-size: small;
+    text-align: center;
+    font-weight: bold; 
+    padding: 5px 0;
+    margin-right: 5px;
+    
+    /*margin-top: 10px;
+    margin-left: 10px; padding: 5px 7px; border: solid 1px blue*/
+}
+
+.column04_cell_button_filter
+{
+    float: left;
+    height: 20px;
+    width: 20px;
+    /*margin: 2px 1px 2px 2px;
+    padding: 1px 5px 1px 1px;
+    text-align: left;
+    margin-top: 10px;padding: 5px 0;*/
+    margin-right: 5px;
+   
+}
+
+.content_border
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.sec_RadButton
+{
+    float: left;
+    height: 20px;
+    width: 15px;
+}
+
+.element_radwindows
+{
+    z-index:9999999999 !important;
+}
+
+/*RadListView*/
+.div_principal_listview
+{
+    /*height: 60px;*/
+    height: 80px;
+    width: 970px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px; 
+    border: 1px double rgba(132, 173, 79, .25);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 1px 1px 3px #84AD4F;
+    -webkit-box-shadow: 1px 1px 3px #84AD4F;
+    box-shadow: 1px 1px 3px #84AD4F;
+}
+
+
+.content_principal_div
+{
+    height: 80px;
+    width: 980px; /* height: 60px; padding: 5px;     margin: 0px;     background-color: #538ed5;*/
+}
+
+
+.content_principal_div:hover
+{
+    color: #000000;
+    /*height: 60px; width: 970px;*/
+    height: 80px;
+    width: 980px;
+     background-color: #86B352;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-image: -ms-linear-gradient(#86B352, #E4F8CC);/* IE6-9 */
+    }
+ 
+ .content_principal_div:hover .div_secundario_color{
+	color: #8A8AFF;
+	 font-size: 12px;
+     font-family: Arial;
+} 
+ 
+  
+     
+ 
+.content_principal_div.selected
+{
+    color: #000000;
+    /*height: 60px; width: 970px;*/
+    height: 80px;
+    width: 980px;
+    background-color: #86B352;
+     -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-image: -ms-linear-gradient(#86B352, #E4F8CC);/* IE6-9 */
+    }
+
+
+
+.div_secundario_imagen
+{
+    float: left;
+    height: 60px;
+    width: 80px; /* margin-left: 5px;     margin-right: 5px;*/
+    background-color: #86B352;
+    text-align: center;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-image: -ms-linear-gradient(#86B352, #E4F8CC);/* IE6-9 */ /*#B4E57B #C7FA8B*/
+    /*-webkit-border-radius: 5px;     -moz-border-radius: 5px;     border-radius: 5px;*/
+    }
+
+.content_scroll
+{
+    overflow:scroll !important;
+   -webkit-overflow-scrolling:touch !important;
+}
+
+.div_secundario_principal
+{
+    float: left;
+    height: 80px;
+    /*height: 60px;
+      width: 78%;*/
+     width: 100%;
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+.div_secundario_mensaje
+{
+    float: left;
+    height: 20px;
+    /*width: 90%;*/
+     width: 100%;
+    margin-top: 10px; 
+    /*color: #757575; */
+     color: #2D2C2C;
+    font-size: 16px;
+     font-family: Arial;
+     /*background-color:  Red;*/
+}
+
+.div_secundario_detalle
+{
+    float: left;
+    height: 20px;
+    width: 100%;
+    margin-top: 6px;
+    /*width: 90%; margin-top: 10px; color: #757575;*/
+    color: #2D2C2C;
+     font-size: 12px;
+     font-family: Arial;
+}
+
+.div_secundario_color
+{
+    /*color: #C5C4C4;*/
+     color: #757575;
+     font-size: 12px;
+     font-family: Arial;
+}
+
+
+
+.div_secundario_estado
+{
+    float: left;
+    height: 60px;
+    width: 110px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-position: left top;
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    font-size: 12px;
+     font-family: Arial;
+}
+
+.div_secundario_estado_linea
+{
+    float: left;
+    height: 20px;
+    width: 100%; 
+    text-align: center;
+    color: #BCBCDB;
+}
+
+a.selectedButtons:link
+{
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.DataPager-group
+{
+    float: right;
+    height: 25px;
+    width: 360px;
+    border: 0;
+    color: #B2B2B1;
+    text-align: center; 
+    background-color: white;
+    font-size: 11px;
+}
+
+.DataPager_page
+{
+    float: left;
+    height: 20px;
+    width: 20px;
+    color: White;
+    font-family: Arial;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 11px;
+    border: 1px solid #CCCCCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #93B85B;
+    padding-top: 5px; 
+}
+
+.DataPager_next
+{
+    float: left;
+    height: 20px;
+    width: 20px;
+    color: #B2B2B1;
+    font-family: Arial;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 11px;
+    border: 1px solid #CCCCCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    background-color: white;
+    padding-top: 5px;
+}
+
+.DataPager_next_button
+{
+    float: right;
+    height: 0px;
+    width: 0px;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    border: 0; 
+    background-color: white;
+}
+
+.div_imagen_estado
+{
+    float: left;
+    height: 17px;
+    width: 9px;
+    vertical-align: middle;
+    margin-top:3px; 
+}
+
+/*tab*/
+.tab_individual
+{
+    float: left;
+    width: auto;
+    height: auto;
+    Color:White ;
+    font-size: small;
+    text-align: center;
+}
+
+.tab_individual:selected 
+{
+    float: left;
+    width: auto;
+    height: auto;
+    Color:White;
+    font-size: small;
+    background-color: black;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+} 
+
+html .RadTabStrip .rtsLevel1 .rtsSelected,
+html .RadTabStrip .rtsLevel1 .rtsSelected:hover
+{     
+   float: left;
+   width: auto;
+   height: auto;
+   Color:White;
+   font-size: small;
+   background-color: #007067;
+}

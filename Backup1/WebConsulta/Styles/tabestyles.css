@@ -1,0 +1,77 @@
+﻿.tab_general
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small;
+    text-align: center; 
+    /*background: url(../images/plomo.png) repeat-x 0 0; */
+    background-color: #373E48;
+}
+
+.tab_individual
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small;
+    text-align: center; 
+    border-left: 1px solid #AEAEAE; border-right: 1px solid #AEAEAE; 
+}
+
+.tab_individual:hover
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small; 
+    background-color: black;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+}
+
+.tab_individual:selected
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small; 
+    background-color: black;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+}
+
+html .RadTabStrip .rtsLevel1 .rtsSelected, html .RadTabStrip .rtsLevel1 .rtsSelected:hover
+{
+    float: left;
+    width: auto;
+    height: auto;
+    color: White;
+    font-size: small; /*background:url(../images/background/naranja.png) repeat-x 0 0;*/
+    background-color: #575757;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+
+.content_tab_datos02
+{
+    float: left;
+    height: 320px;
+    width: 925px;
+    padding: 2px 2px; 
+    padding-left: 2px;
+    padding-top: 5px;
+}
+
+
+.content_tab_master
+{
+    float: left;
+    height: 340px;
+    width: 950px;
+    padding: 1px 1px 1px 1px;
+}

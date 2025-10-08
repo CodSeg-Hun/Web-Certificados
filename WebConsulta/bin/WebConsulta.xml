@@ -1,0 +1,5546 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebConsulta
+</name>
+</assembly>
+<members>
+<member name="T:WebConsulta.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:WebConsulta.My.MyWebExtension.Application">
+ <summary>
+ Devuelve información sobre la aplicación actual.
+ </summary>
+</member>
+<member name="P:WebConsulta.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:WebConsulta.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:WebConsulta.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:WebConsulta.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:WebConsulta.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="P:WebConsulta.My.MyWebExtension.WebServices">
+ <summary>
+ Proporciona acceso a los servicios Web agregados a este proyecto.
+ </summary>
+</member>
+<member name="T:WebConsulta.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:WebConsulta.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:WebConsulta.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="M:WebConsulta.ConsultaWeb.Consulta_Datos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64)">
+ <summary>
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ COMENTARIO: MÉDOTO PARA PODER CONSULTAR LOS DATOS INICIALES
+ </summary>
+ <param name="tipo"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWeb.Consulta_Mensaje(System.String,System.Int64,System.String,System.String,System.String,System.String)">
+ <summary>
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ COMENTARIO: MÉDOTO PARA PODER CONSULTAR LOS DATOS INICIALES
+ </summary>
+ <param name="tipo"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.GeneraDataCphr.Descifrar(System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: FUNCIÓN PARA DESCIFRAR CADENAS DE CARACTERES
+ </summary>
+ <param name="stringToDecrypt"></param>
+ <param name="sEncryptionKey"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.GeneraDataCphr.Cifrar(System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: 
+ </summary>
+ <param name="stringToEncrypt"></param>
+ <param name="SEncryptionKey"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:WebConsulta.Log">
+AUTOR:       JCOLOMA
+FECHA:       30/04/2012
+OBJETIVO:    ADMINISTRA LAS FUNCIONES DE CONEXIÓN E INGRESO DE DATOS PARA EL LOG DE USUARIOS
+</member>
+<member name="M:WebConsulta.Log.Registro_Actividad_Formulario(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 23/07/2012
+ COMENTARIO: FUNCIÓN PARA REGISTRAR LA AUDITORÍA DE LOS USUARIOS
+ </summary>
+ <param name="ip"></param>
+ <param name="id_usuario"></param>
+ <param name="id_formulario_back"></param>
+ <param name="id_formulario"></param>
+ <param name="desc_usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Log.Registro_Actividad_Formulario2(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 23/07/2012
+ COMENTARIO: FUNCIÓN PARA REGISTRAR LA AUDITORÍA DE LOS USUARIOS
+ </summary>
+ <param name="ip"></param>
+ <param name="id_usuario"></param>
+ <param name="id_formulario_back"></param>
+ <param name="id_formulario"></param>
+ <param name="desc_usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Log.Consulta_Formulario(System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 23/07/2012
+ COMENTARIO: MÉTODO PARA OBTENER LA INFORMACIÓN DEL FORMULARIO AL CUAL SE INGRESA
+ </summary>
+ <param name="formulario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.LogAdministracion.Registro_Actividad_Formulario(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+ <summary>
+AUTOR:       MNAREA
+FECHA:       29/06/2012
+OBJETIVO:    Regitra activiad de formulario
+ </summary>
+ <param name="ip"></param>
+ <param name="id_usuario"></param>
+ <param name="id_formulario_back"></param>
+ <param name="id_formulario"></param>
+ <param name="desc_usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Login.Registro_Actividad_Formulario(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+ <summary>
+AUTOR:       MNAREA
+FECHA:       29/06/2012
+OBJETIVO:    Regitra activiad de formulario
+ </summary>
+ <param name="ip"></param>
+ <param name="id_usuario"></param>
+ <param name="id_formulario_back"></param>
+ <param name="id_formulario"></param>
+ <param name="desc_usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.Login._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._form2">
+<summary>
+Control form2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._txt_Usuario">
+<summary>
+Control txt_Usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._txt_password">
+<summary>
+Control txt_password.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._BtnLogin">
+<summary>
+Control BtnLogin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._lbl_ip">
+<summary>
+Control lbl_ip.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._lbl_msg_login">
+<summary>
+Control lbl_msg_login.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._lbl_iphost2">
+<summary>
+Control lbl_iphost2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._RadCodeBlock1">
+<summary>
+Control RadCodeBlock1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._RadAjaxLoadingPanel1">
+<summary>
+Control RadAjaxLoadingPanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Login._RadAjaxManager1">
+<summary>
+Control RadAjaxManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.Login.login_Init(System.Object,System.EventArgs)">
+ <summary>
+ Motivo: Load de login
+ Fecha: 28/06/2012
+ Autor: compatibilidad en explorador
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Login.InfoUsuario">
+ <summary>
+ FECHA: 25/11/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER LA IP Y HOSTNAME DEL EQUIPO VISITANTE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Login.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ Motivo: Load de login
+ Fecha: 28/06/2012
+ Autor: Maritza Narea
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Login.BtnLogin_Click(System.Object,System.EventArgs)">
+ <summary>
+ Motivo: Metodo de inicio de sesion
+ Fecha: 28/06/2012
+ Autor: Maritza Narea
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Login.Datos_Log_Ingreso">
+ <summary>
+ Motivo: Metodo de log de ingreso
+ Fecha: 28/06/2012
+ Autor: Maritza Narea
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.AdministracionLogin.Login_Usuario(System.String,System.String)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: FUNCIÓN PARA OBTENER LOS DATOS DEL USUARIO Y SU ID
+ </summary>
+ <param name="usuario"></param>
+ <param name="password"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.AdministracionLogin.Datos_Login_Usuario(System.String)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: Permite obtener usuarios de dominio
+ </summary>
+ <param name="usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.AdministracionLogin.Datos_Perfil_Usuario(System.String,System.Int32)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: Permite obtener perfil de usuario
+ </summary>
+ <param name="usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.AdministracionLogin.Datos_Menu(System.Int32)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: Permite obtener items de menu
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.AdministracionLogin.Datos_Menu2(System.Int32,System.Int32,System.String,System.Int32,System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 04/09/2012
+ </summary>
+ <param name="proceso"></param>
+ <param name="empresa"></param>
+ <param name="usuario_sh"></param>
+ <param name="usuario_id"></param>
+ <param name="tipo_opcion_menu"></param>
+ <param name="tipo_menu"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.AdministracionLogin.Datos_Menu3(System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 04/09/2012
+ COMENTARIO: FUNCIÓN PARA EL LLENADO DEL MENÚ PREVIO A HABILITAR LAS OPCIONES
+ </summary>
+ <param name="proceso"></param>
+ <param name="empresa"></param>
+ <param name="usuario_sh"></param>
+ <param name="usuario_id"></param>
+ <param name="tipo_opcion_menu"></param>
+ <param name="tipo_menu"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.lib_password.Verificar_Usuario(System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 23/07/2012
+ COMENTARIO: FUNCIÓN PARA VERIFICAR EL ESTADO DEL USUARIO EN EL SISTEMA
+ </summary>
+ <param name="usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.lib_password.Modificar_Password(System.String,System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 23/07/2012
+ COMENTARIO: FUNCIÓN PARA REALIZAR LA MODIFICACIÓN DE LA CONTRASEÑA POR LA NUEVA
+ </summary>
+ <param name="usuario"></param>
+ <param name="password"></param>
+ <param name="password_new"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.lib_password.Retornar_Password(System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 23/07/2012
+ COMENTARIO: FUNCIÓN PARA RETORNAR LA CONTRASEÑA NUEVA VÍA EMAIL
+ </summary>
+ <param name="usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.lib_password.Encriptar3S(System.String)">
+ <summary>
+ AUTOR: FELIX ONTANEDA
+ FECHA: 14/06/2012
+ COMENTARIO: FUNCIÓN PARA ENCRIPTAR LA CONTRASEÑA QUE SE ENVÍA A MODIFICAR
+ </summary>
+ <param name="Password"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.lib_password.Resetear_Password(System.String,System.String)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 23/07/2012
+ COMENTARIO: FUNCIÓN PARA RESETEAR LA CONTRASEÑA DEL USUARIO QUE HAYA PASADO LA FECHA DE CADUCIDA DE PASSWORD
+ </summary>
+ <param name="usuario"></param>
+ <param name="password_new"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.PasswordAdminitracion.Verificar_Usuario(System.String,System.String)">
+ <summary>
+ Autor: MNAREA
+ Motivo: Verifica ususario
+ Fecha: 14/06/2012
+ </summary>
+ <param name="usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.PasswordAdminitracion.Modificar_Password(System.String,System.String,System.String)">
+ <summary>
+ Autor: MNAREA
+ Motivo: Modificar password
+ Fecha: 14/06/2012 
+ </summary>
+ <param name="usuario"></param>
+ <param name="password"></param>
+ <param name="password_new"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.PasswordAdminitracion.Retornar_Password(System.String,System.String)">
+ <summary>
+ Autor: MNAREA
+ Motivo: Retornar password
+ Fecha: 14/06/2012  
+ </summary>
+ <param name="usuario"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.PasswordAdminitracion.Encriptar3S(System.String)">
+ <summary>
+ Autor: MNAREA
+ Motivo ENCRIPTAR CONTRASENIA METODO 3S
+ Fecha: 14/06/2012
+ </summary>
+ <param name="Password"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.PasswordAdminitracion.Resetear_Password(System.String,System.String)">
+ <summary>
+ Autor: MNAREA
+ Motivo Resetear password
+ Fecha: 14/06/2012 
+ </summary>
+ <param name="usuario"></param>
+ <param name="password_new"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta._ErrorAplicacion._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta._ErrorAplicacion._lbl_error_msg">
+<summary>
+Control lbl_error_msg.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta._ErrorAplicacion.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 26/07/2012
+ COMENTARIO: EVENTO LOAD DEL FORMULARIO PÁGINA "404"
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._lbl_msg_caduca">
+<summary>
+Control lbl_msg_caduca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._lbl_usuario">
+<summary>
+Control lbl_usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._txt_usuario">
+<summary>
+Control txt_usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._lbl_password_last">
+<summary>
+Control lbl_password_last.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._txt_password_last">
+<summary>
+Control txt_password_last.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._lbl_password_new">
+<summary>
+Control lbl_password_new.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._txt_password_new">
+<summary>
+Control txt_password_new.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._lbl_msg_login">
+<summary>
+Control lbl_msg_login.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._RequiredFieldValidator2">
+<summary>
+Control RequiredFieldValidator2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._RequiredFieldValidator3">
+<summary>
+Control RequiredFieldValidator3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._BtnValidar">
+<summary>
+Control BtnValidar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._BtnCancelar">
+<summary>
+Control BtnCancelar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._BtnRegresar">
+<summary>
+Control BtnRegresar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._RadAjaxLoadingPanel1">
+<summary>
+Control RadAjaxLoadingPanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._RadAjaxManager1">
+<summary>
+Control RadAjaxManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ActualizarContraseña._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ActualizarContraseña.Control_Sesion">
+ <summary>
+ Autor: MNAREA
+ Motivo: control de sesion
+ Fecha: 14/06/2012  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ActualizarContraseña.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ Autor: MNAREA
+ Motivo: Load Modificar password
+ Fecha: 14/06/2012 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ActualizarContraseña.BtnValidar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Autor: MNAREA
+ Motivo: Valida contrasenia
+ Fecha: 14/06/2012 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ActualizarContraseña.BtnRegresar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Autor: MNAREA
+ Motivo: regresa a login
+ Fecha: 14/06/2012  
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ActualizarContraseña.Datos_Log_Ingreso">
+ <summary>
+ Autor: MNAREA
+ Motivo: Log de ingreso
+ Fecha: 14/06/2012 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ActualizarContraseña.BtnCancelar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Autor: FONTANEDA
+ Motivo: Se añade boton de cancelara para regresar al login
+ Fecha: 07/08/2012
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.Administracion._head">
+<summary>
+Control head.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._imgusericon">
+<summary>
+Control imgusericon.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._lbl_default">
+<summary>
+Control lbl_default.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._lbl_usuario_login">
+<summary>
+Control lbl_usuario_login.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._lbl_usuario_canal">
+<summary>
+Control lbl_usuario_canal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._BntSalir">
+<summary>
+Control BntSalir.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._RadMenu1">
+<summary>
+Control RadMenu1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Administracion._ContentPlaceHolder1">
+<summary>
+Control ContentPlaceHolder1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.Administracion.Datos_Log_Ingreso">
+ <summary>
+ Motivo: Load de login
+ Fecha: 28/06/2012
+ Autor: metodo de log de ingreso
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Administracion.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ Motivo: Load de login
+ Fecha: 28/06/2012
+ Autor: Maritza Narea
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Administracion.BntSalir_Click(System.Object,System.EventArgs)">
+ <summary>
+ Motivo: salir del sitio
+ Fecha: 28/06/2012
+ Autor: Maritza Narea 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Administracion.Habilita_Menu(System.String)">
+ <summary>
+ Motivo: Permite habilitar menu
+ Fecha: 28/06/2012
+ Autor: Maritza Narea
+ </summary>
+ <param name="usuario"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.Administracion.Llena_Menu">
+ <summary>
+ FONTANEDA: MENU DINAMICO
+ 14/06/2012
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._txtbusqueda">
+<summary>
+Control txtbusqueda.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._BtnConsulta">
+<summary>
+Control BtnConsulta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._BtnAceptar">
+<summary>
+Control BtnAceptar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._BtnClose">
+<summary>
+Control BtnClose.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._rgdconsulta">
+<summary>
+Control rgdconsulta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.busquedacanal._rntMensajes">
+<summary>
+Control rntMensajes.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._RadScriptManager2">
+<summary>
+Control RadScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._RadAjaxManager2">
+<summary>
+Control RadAjaxManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._RadAjaxLoadingPanel2">
+<summary>
+Control RadAjaxLoadingPanel2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._lbl_msg_caduca">
+<summary>
+Control lbl_msg_caduca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._lbl_usuario">
+<summary>
+Control lbl_usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._txt_usuario">
+<summary>
+Control txt_usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._lbl_password_last">
+<summary>
+Control lbl_password_last.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._txt_password_last">
+<summary>
+Control txt_password_last.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._lbl_password_new">
+<summary>
+Control lbl_password_new.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._txt_password_new">
+<summary>
+Control txt_password_new.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._lbl_msg_login">
+<summary>
+Control lbl_msg_login.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._BtnCambiar">
+<summary>
+Control BtnCambiar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.CambiarContraseña._BtnCancelar">
+<summary>
+Control BtnCancelar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.CambiarContraseña.Control_Sesion">
+ <summary>
+ Autor: GALVAR
+ Motivo: control de sesion
+ Fecha: 16/10/2019  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.CambiarContraseña.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ Autor: GALVAR
+ Motivo: PAGE DE LOAD
+ Fecha: 16/10/2019  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.CambiarContraseña.BtnCancelar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Autor: GALVAR
+ Motivo: boton de cancelar
+ Fecha: 16/10/2019  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.CambiarContraseña.BtnCambiar_Click(System.Object,System.EventArgs)">
+ <summary>
+ Autor: GALVAR
+ Motivo: boton de cambiar
+ Fecha: 16/10/2019  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.CertificadoNetsuite._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._BtnNuevo">
+<summary>
+Control BtnNuevo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._BtnConsultar">
+<summary>
+Control BtnConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._btnExportar">
+<summary>
+Control btnExportar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._titcorreo">
+<summary>
+Control titcorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._Div3">
+<summary>
+Control Div3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._TxtCorreo">
+<summary>
+Control TxtCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._BtnEnvia">
+<summary>
+Control BtnEnvia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._BtnCancela">
+<summary>
+Control BtnCancela.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._cmb_canal">
+<summary>
+Control cmb_canal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._txtcanalID">
+<summary>
+Control txtcanalID.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._txtcanal">
+<summary>
+Control txtcanal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RadCodeBlock1">
+<summary>
+Control RadCodeBlock1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._btn_buscar">
+<summary>
+Control btn_buscar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._cmb_anio">
+<summary>
+Control cmb_anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._cmb_mes">
+<summary>
+Control cmb_mes.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RadGridDatos">
+<summary>
+Control RadGridDatos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RadWindowManager1">
+<summary>
+Control RadWindowManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RadWindow4">
+<summary>
+Control RadWindow4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RnMensajesError">
+<summary>
+Control RnMensajesError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RadAjaxManager1">
+<summary>
+Control RadAjaxManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaConcesionarios._RadAjaxLoadingPanel1">
+<summary>
+Control RadAjaxLoadingPanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaConcesionarios.Control_Sesion">
+ <summary>
+ Motivo: control de sesion
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaConcesionarios.ConfigControles(System.Int32)">
+ <summary>
+ FECHA: 08/08/2014
+ AUTOR: GALO ALVARADO
+ COMENTARIO: CONSULTA DE DATOS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaConcesionarios.Mensaje(System.String,System.Int32)">
+ <summary>
+ Motivo: Personaliza mensaje a preentar al usuario
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <param name="Texto"></param>
+ <param name="OperacionRealizar"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaConcesionarios.ConsultaInicial">
+ <summary>
+ FECHA: 08/08/2014
+ AUTOR: GALO ALVARADO
+ COMENTARIO: CONSULTA DE DATOS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaConcesionarios.RadGridDatos_ItemCommand(System.Object,Telerik.Web.UI.GridCommandEventArgs)">
+ <summary>
+ FECHA: 29/10/2019
+ AUTOR: GALO ALVARADO
+ COMENTARIO: EVENTO ITEMCOMMAND DEL GRID DE APROBACIÓN
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaConcesionarios.ConfigExportar">
+ <summary>
+ FECHA: 30/10/2019
+ AUTOR: GALO ALVARADO
+ COMENTARIO: MÉTODO PARA CONFIGURAR EL BOTÓN DE EXPORTAR ARCHIVO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._BtnNuevo">
+<summary>
+Control BtnNuevo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._BtnConsultar">
+<summary>
+Control BtnConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._BtnImprimir">
+<summary>
+Control BtnImprimir.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._BtnCorreo">
+<summary>
+Control BtnCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConCodCliente">
+<summary>
+Control txtConCodCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._Txtconanio">
+<summary>
+Control Txtconanio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtCodConvenio">
+<summary>
+Control txtCodConvenio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._titcorreo">
+<summary>
+Control titcorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._TxtCorreo">
+<summary>
+Control TxtCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._BtnEnvia">
+<summary>
+Control BtnEnvia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._BtnCancela">
+<summary>
+Control BtnCancela.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtCodVehiculo">
+<summary>
+Control txtCodVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._TxtConCliente">
+<summary>
+Control TxtConCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConTipo">
+<summary>
+Control txtConTipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConPlaca">
+<summary>
+Control txtConPlaca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConConcesionario">
+<summary>
+Control txtConConcesionario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConModelo">
+<summary>
+Control txtConModelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtChasis">
+<summary>
+Control txtChasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConFinanciera">
+<summary>
+Control txtConFinanciera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConColor">
+<summary>
+Control txtConColor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._TxtMotor">
+<summary>
+Control TxtMotor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._cbm_tipo">
+<summary>
+Control cbm_tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._txtConMarca">
+<summary>
+Control txtConMarca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._lbl_canales">
+<summary>
+Control lbl_canales.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._TableProducto">
+<summary>
+Control TableProducto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._RadGridVehiculo">
+<summary>
+Control RadGridVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._mensajetexto">
+<summary>
+Control mensajetexto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._RadScriptManager2">
+<summary>
+Control RadScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._RnMensajesError">
+<summary>
+Control RnMensajesError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._rntResultado">
+<summary>
+Control rntResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._rgdResultado">
+<summary>
+Control rgdResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._RadWindowManager1">
+<summary>
+Control RadWindowManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._wdwcertificado">
+<summary>
+Control wdwcertificado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._RadAjaxManager2">
+<summary>
+Control RadAjaxManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosNetsuite._RadAjaxLoadingPanel2">
+<summary>
+Control RadAjaxLoadingPanel2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.Control_Sesion">
+ <summary>
+ Motivo: control de sesion
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.Datos_Log_Ingreso">
+ <summary>
+ Motivo: registro de log
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.Botones(System.String)">
+ <summary>
+ Motivo: proceso de botones para presentarlos
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.Mensaje(System.String,System.Int32,System.Exception)">
+ <summary>
+ Motivo: Personaliza mensaje a preentar al usuario
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <param name="Texto"></param>
+ <param name="OperacionRealizar"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.InicializaObjetos">
+ <summary>
+ Motivo: método que permite inicializar objetos
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.ConsultarVehiculo">
+ <summary>
+ Motivo: método que permite obtener los datos vacios de los grid
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.Consultar">
+ <summary>
+ Motivo: método que permite consultar los datos deacuerdo a los criterios
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosNetsuite.Redirect(System.String,System.String,System.String)">
+ <summary>
+ FECHA: 25/01/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: 
+ </summary>
+ <param name="url"></param>
+ <param name="target"></param>
+ <param name="windowFeatures"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._BtnNuevo">
+<summary>
+Control BtnNuevo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._BtnConsultar">
+<summary>
+Control BtnConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._BtnImprimir">
+<summary>
+Control BtnImprimir.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._BtnCorreo">
+<summary>
+Control BtnCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._titcorreo">
+<summary>
+Control titcorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._TxtCorreo">
+<summary>
+Control TxtCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._BtnEnvia">
+<summary>
+Control BtnEnvia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._BtnCancela">
+<summary>
+Control BtnCancela.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtChasis">
+<summary>
+Control txtChasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._TxtMotor">
+<summary>
+Control TxtMotor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConCodCliente">
+<summary>
+Control txtConCodCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtCodVehiculo">
+<summary>
+Control txtCodVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConColor">
+<summary>
+Control txtConColor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._Txtconanio">
+<summary>
+Control Txtconanio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._TxtConCliente">
+<summary>
+Control TxtConCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConConcesionario">
+<summary>
+Control txtConConcesionario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtCodConvenio">
+<summary>
+Control txtCodConvenio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConFinanciera">
+<summary>
+Control txtConFinanciera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._cbm_tipo">
+<summary>
+Control cbm_tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConMarca">
+<summary>
+Control txtConMarca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConModelo">
+<summary>
+Control txtConModelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConPlaca">
+<summary>
+Control txtConPlaca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._txtConTipo">
+<summary>
+Control txtConTipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._lbl_canales">
+<summary>
+Control lbl_canales.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._RadGridVehiculo">
+<summary>
+Control RadGridVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._mensajetexto">
+<summary>
+Control mensajetexto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._RadScriptManager2">
+<summary>
+Control RadScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._RnMensajesError">
+<summary>
+Control RnMensajesError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._rntResultado">
+<summary>
+Control rntResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._rgdResultado">
+<summary>
+Control rgdResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._RadWindowManager1">
+<summary>
+Control RadWindowManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._wdwcertificado">
+<summary>
+Control wdwcertificado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._RadAjaxManager2">
+<summary>
+Control RadAjaxManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatos._RadAjaxLoadingPanel2">
+<summary>
+Control RadAjaxLoadingPanel2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.Control_Sesion">
+ <summary>
+ Motivo: control de sesion
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.Datos_Log_Ingreso">
+ <summary>
+ Motivo: registro de log
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.Botones(System.String)">
+ <summary>
+ Motivo: proceso de botones para presentarlos
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.Mensaje(System.String,System.Int32,System.Exception)">
+ <summary>
+ Motivo: Personaliza mensaje a preentar al usuario
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <param name="Texto"></param>
+ <param name="OperacionRealizar"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.InicializaObjetos">
+ <summary>
+ Motivo: método que permite inicializar objetos
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.ConsultarVehiculo">
+ <summary>
+ Motivo: método que permite obtener los datos vacios de los grid
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.Consultar">
+ <summary>
+ Motivo: método que permite consultar los datos deacuerdo a los criterios
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatos.Redirect(System.String,System.String,System.String)">
+ <summary>
+ FECHA: 25/01/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: 
+ </summary>
+ <param name="url"></param>
+ <param name="target"></param>
+ <param name="windowFeatures"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._BtnNuevo">
+<summary>
+Control BtnNuevo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._BtnConsultar">
+<summary>
+Control BtnConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._BtnImprimir">
+<summary>
+Control BtnImprimir.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._BtnCorreo">
+<summary>
+Control BtnCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._BtnExportar">
+<summary>
+Control BtnExportar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtConTipo">
+<summary>
+Control txtConTipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtConCodCliente">
+<summary>
+Control txtConCodCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._rdpFechaInicio">
+<summary>
+Control rdpFechaInicio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._rdpFechaFin">
+<summary>
+Control rdpFechaFin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtChasis">
+<summary>
+Control txtChasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._TxtMotor">
+<summary>
+Control TxtMotor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtCodVehiculo">
+<summary>
+Control txtCodVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtConPlaca">
+<summary>
+Control txtConPlaca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._Txtconanio">
+<summary>
+Control Txtconanio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._TxtConCliente">
+<summary>
+Control TxtConCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtConColor">
+<summary>
+Control txtConColor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtConMarca">
+<summary>
+Control txtConMarca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._txtConModelo">
+<summary>
+Control txtConModelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._cmb_canal">
+<summary>
+Control cmb_canal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._cbm_estado">
+<summary>
+Control cbm_estado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._titcorreo">
+<summary>
+Control titcorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._Div1">
+<summary>
+Control Div1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._TxtCorreo">
+<summary>
+Control TxtCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._BtnEnvia">
+<summary>
+Control BtnEnvia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._BtnCancela">
+<summary>
+Control BtnCancela.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._Div2">
+<summary>
+Control Div2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._radtabdatos">
+<summary>
+Control radtabdatos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadMultiPage1">
+<summary>
+Control RadMultiPage1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadPageView1">
+<summary>
+Control RadPageView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadGridConsultar">
+<summary>
+Control RadGridConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadPageView2">
+<summary>
+Control RadPageView2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadGridVehiculo">
+<summary>
+Control RadGridVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadScriptManager2">
+<summary>
+Control RadScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RnMensajesError">
+<summary>
+Control RnMensajesError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._rntResultado">
+<summary>
+Control rntResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._rgdResultado">
+<summary>
+Control rgdResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadWindowManager1">
+<summary>
+Control RadWindowManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadAjaxManager2">
+<summary>
+Control RadAjaxManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosConvenios._RadAjaxLoadingPanel2">
+<summary>
+Control RadAjaxLoadingPanel2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosConvenios.Control_Sesion">
+ <summary>
+ Motivo: control de sesion
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosConvenios.Mensaje(System.String,System.Int32,System.Exception)">
+ <summary>
+ Motivo: Personaliza mensaje a preentar al usuario
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <param name="Texto"></param>
+ <param name="OperacionRealizar"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosConvenios.InicializaObjetos">
+ <summary>
+ Motivo: método que permite inicializar objetos
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosConvenios.ConsultarVehiculo">
+ <summary>
+ Motivo: método que permite obtener los datos vacios de los grid
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosConvenios.Consultar(System.String)">
+ <summary>
+ Motivo: método que permite consultar los datos deacuerdo a los criterios
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosConvenios.Redirect(System.String,System.String,System.String)">
+ <summary>
+ FECHA: 25/01/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: 
+ </summary>
+ <param name="url"></param>
+ <param name="target"></param>
+ <param name="windowFeatures"></param>
+ <remarks></remarks>
+ 
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._BtnNuevo">
+<summary>
+Control BtnNuevo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._BtnConsultar">
+<summary>
+Control BtnConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._BtnImprimir">
+<summary>
+Control BtnImprimir.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._BtnCorreo">
+<summary>
+Control BtnCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtConTipo">
+<summary>
+Control txtConTipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtConCodCliente">
+<summary>
+Control txtConCodCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._rdpFechaInicio">
+<summary>
+Control rdpFechaInicio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._rdpFechaFin">
+<summary>
+Control rdpFechaFin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._cbm_estado">
+<summary>
+Control cbm_estado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtChasis">
+<summary>
+Control txtChasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._TxtMotor">
+<summary>
+Control TxtMotor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtCodVehiculo">
+<summary>
+Control txtCodVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtConPlaca">
+<summary>
+Control txtConPlaca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._Txtconanio">
+<summary>
+Control Txtconanio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._TxtConCliente">
+<summary>
+Control TxtConCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtConColor">
+<summary>
+Control txtConColor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtConMarca">
+<summary>
+Control txtConMarca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._txtConModelo">
+<summary>
+Control txtConModelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._titcorreo">
+<summary>
+Control titcorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._Div1">
+<summary>
+Control Div1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._TxtCorreo">
+<summary>
+Control TxtCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._BtnEnvia">
+<summary>
+Control BtnEnvia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._BtnCancela">
+<summary>
+Control BtnCancela.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._Div2">
+<summary>
+Control Div2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._radtabdatos">
+<summary>
+Control radtabdatos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadMultiPage1">
+<summary>
+Control RadMultiPage1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadPageView1">
+<summary>
+Control RadPageView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadGridConsultar">
+<summary>
+Control RadGridConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadPageView2">
+<summary>
+Control RadPageView2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadGridVehiculo">
+<summary>
+Control RadGridVehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadScriptManager2">
+<summary>
+Control RadScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RnMensajesError">
+<summary>
+Control RnMensajesError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._rntResultado">
+<summary>
+Control rntResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._rgdResultado">
+<summary>
+Control rgdResultado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadWindowManager1">
+<summary>
+Control RadWindowManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadAjaxManager2">
+<summary>
+Control RadAjaxManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaDatosLatam._RadAjaxLoadingPanel2">
+<summary>
+Control RadAjaxLoadingPanel2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosLatam.Control_Sesion">
+ <summary>
+ Motivo: control de sesion
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosLatam.Mensaje(System.String,System.Int32,System.Exception)">
+ <summary>
+ Motivo: Personaliza mensaje a preentar al usuario
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <param name="Texto"></param>
+ <param name="OperacionRealizar"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosLatam.InicializaObjetos">
+ <summary>
+ Motivo: método que permite inicializar objetos
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosLatam.ConsultarVehiculo">
+ <summary>
+ Motivo: método que permite obtener los datos vacios de los grid
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosLatam.Consultar(System.String)">
+ <summary>
+ Motivo: método que permite consultar los datos deacuerdo a los criterios
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaDatosLatam.Redirect(System.String,System.String,System.String)">
+ <summary>
+ FECHA: 25/01/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: 
+ </summary>
+ <param name="url"></param>
+ <param name="target"></param>
+ <param name="windowFeatures"></param>
+ <remarks></remarks>
+ 
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._lbltitulodetfljcja">
+<summary>
+Control lbltitulodetfljcja.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._textcabecera">
+<summary>
+Control textcabecera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._textcabecera01">
+<summary>
+Control textcabecera01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._tex01">
+<summary>
+Control tex01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._grid">
+<summary>
+Control grid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._tex02">
+<summary>
+Control tex02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._tex05">
+<summary>
+Control tex05.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._tex03">
+<summary>
+Control tex03.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._tex04">
+<summary>
+Control tex04.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._tex06">
+<summary>
+Control tex06.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._tex07">
+<summary>
+Control tex07.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._Image2">
+<summary>
+Control Image2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporte._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaReporte.Detalle(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._lbltitulodetfljcja">
+<summary>
+Control lbltitulodetfljcja.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._textcabecera">
+<summary>
+Control textcabecera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._textcabecera01">
+<summary>
+Control textcabecera01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._tex01">
+<summary>
+Control tex01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._grid">
+<summary>
+Control grid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._tex02">
+<summary>
+Control tex02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._tex05">
+<summary>
+Control tex05.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._tex04">
+<summary>
+Control tex04.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._tex06">
+<summary>
+Control tex06.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteClaro._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaReporteClaro.Detalle(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._lbltitulodetfljcja">
+<summary>
+Control lbltitulodetfljcja.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._textcabecera">
+<summary>
+Control textcabecera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._textcabecera01">
+<summary>
+Control textcabecera01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._tex01">
+<summary>
+Control tex01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._grid">
+<summary>
+Control grid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._tex02">
+<summary>
+Control tex02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._tex05">
+<summary>
+Control tex05.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._tex03">
+<summary>
+Control tex03.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._tex04">
+<summary>
+Control tex04.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._tex06">
+<summary>
+Control tex06.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._tex07">
+<summary>
+Control tex07.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._Image2">
+<summary>
+Control Image2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebAmbacar._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWebAmbacar.Detalle2(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.Sitios._RadScriptManager2">
+<summary>
+Control RadScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.Sitios._myframe">
+<summary>
+Control myframe.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._textcabecera">
+<summary>
+Control textcabecera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._textcabecera01">
+<summary>
+Control textcabecera01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._tex01">
+<summary>
+Control tex01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._grid">
+<summary>
+Control grid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._tex02">
+<summary>
+Control tex02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._tex05">
+<summary>
+Control tex05.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._tex03">
+<summary>
+Control tex03.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._tex04">
+<summary>
+Control tex04.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._tex06">
+<summary>
+Control tex06.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._tex07">
+<summary>
+Control tex07.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._Image2">
+<summary>
+Control Image2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteCasabaca._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaReporteCasabaca.Detalle(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._lbltitulodetfljcja">
+<summary>
+Control lbltitulodetfljcja.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._tex06">
+<summary>
+Control tex06.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._tex07">
+<summary>
+Control tex07.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._Image2">
+<summary>
+Control Image2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteConvenio._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaReporteConvenio.Detalle(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._lbltitulodetfljcja">
+<summary>
+Control lbltitulodetfljcja.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._tex02">
+<summary>
+Control tex02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._tex06">
+<summary>
+Control tex06.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._imgqrgenerator">
+<summary>
+Control imgqrgenerator.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._tex07">
+<summary>
+Control tex07.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._Image2">
+<summary>
+Control Image2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaReporteLatam._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._textcabecera">
+<summary>
+Control textcabecera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._textcabecera01">
+<summary>
+Control textcabecera01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._tex01">
+<summary>
+Control tex01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._grid">
+<summary>
+Control grid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._tex02">
+<summary>
+Control tex02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._Image2">
+<summary>
+Control Image2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebConcesionarios._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWebConcesionarios.Detalle(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._BtnCorreo">
+<summary>
+Control BtnCorreo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._emailDestino">
+<summary>
+Control emailDestino.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._RadButton2">
+<summary>
+Control RadButton2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._btnCancelar">
+<summary>
+Control btnCancelar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._tex01">
+<summary>
+Control tex01.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._grid">
+<summary>
+Control grid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._tex02">
+<summary>
+Control tex02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._tex05">
+<summary>
+Control tex05.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._tex03">
+<summary>
+Control tex03.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._tex04">
+<summary>
+Control tex04.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._tex06">
+<summary>
+Control tex06.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._imgqrgenerator">
+<summary>
+Control imgqrgenerator.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._tex07">
+<summary>
+Control tex07.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._Image3">
+<summary>
+Control Image3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._RadScriptManager2">
+<summary>
+Control RadScriptManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._RadAjaxManager2">
+<summary>
+Control RadAjaxManager2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte._RadAjaxLoadingPanel2">
+<summary>
+Control RadAjaxLoadingPanel2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWebReporte.TituloReporte">
+ <summary>
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ COMENTARIO: MÉTODO PARA ACTUALIZAR EL TITULO DEL FORMULARIO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWebReporte.Detalle(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Head1">
+<summary>
+Control Head1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._cboBarcodeType">
+<summary>
+Control cboBarcodeType.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Vehiculo">
+<summary>
+Control Vehiculo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Nombre">
+<summary>
+Control Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._imgqrgenerator">
+<summary>
+Control imgqrgenerator.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._Image2">
+<summary>
+Control Image2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWebReporte2._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWebReporte2.TituloReporte">
+ <summary>
+ Fecha: 08/08/2013
+ Autor: Galo Alvarado
+ COMENTARIO: MÉTODO PARA ACTUALIZAR EL TITULO DEL FORMULARIO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWebReporte2.Detalle(System.String)">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._lbloswin32">
+<summary>
+Control lbloswin32.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._lblvehiculowin32">
+<summary>
+Control lblvehiculowin32.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._lblnombrewin23">
+<summary>
+Control lblnombrewin23.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._grdproductosdetalle">
+<summary>
+Control grdproductosdetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Marca">
+<summary>
+Control Marca.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Anio">
+<summary>
+Control Anio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Modelo">
+<summary>
+Control Modelo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Placa">
+<summary>
+Control Placa.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Tipo">
+<summary>
+Control Tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Chasis">
+<summary>
+Control Chasis.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Color">
+<summary>
+Control Color.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._Motor">
+<summary>
+Control Motor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._imgqrgenerator">
+<summary>
+Control imgqrgenerator.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._lblfechahoraemision">
+<summary>
+Control lblfechahoraemision.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ConsultaWin32Reporte._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWin32Reporte.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ FECHA: 23/13/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: EVENTO LOAD FORMULARIO CERTIFICADO WIN32 SYSHUNTER
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWin32Reporte.IsNullOrBlank(System.String)">
+ <summary>
+ FECHA: 23/12/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: FUNCIÓN PARA VERIFICAR VALORES NULOS Y ESPACIOS EN BLANCOS
+ </summary>
+ <param name="str"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWin32Reporte.ValidaParametros">
+ <summary>
+ FECHA: 23/12/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: FUNCIÓN PARA VERIFICAR QUE TODOS LOS PARÁMETROS ESTÉN CORRECTOS EN EL QUERYSTRING
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWin32Reporte.Consultar(System.Int32,System.String,System.Int32)">
+ <summary>
+ FECHA: 23/12/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA REALIZAR LA CONSULTA Y CARGAR LOS DATOS DEL CERTIFICADO DESDE EL SYSHUNTER
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ConsultaWin32Reporte.Detalle">
+ <summary>
+ FECHA: 27/02/2013
+ AUTOR: JONATHAN COLOMA
+ COMENTARIO: MÉTODO PARA OBTENER DATOS DE FLUJO
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.Principal._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.Principal.Datos_Log_Ingreso">
+ <summary>
+ AUTOR: JONATHAN COLOMA
+ FECHA: 26/07/2012
+ COMENTARIO: MÉTODO PARA REGISTRAR EL LOG DE AUDITORÍA
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._lbl_usuario">
+<summary>
+Control lbl_usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._txt_usuario">
+<summary>
+Control txt_usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._btn_email">
+<summary>
+Control btn_email.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._lbl_email_registrado">
+<summary>
+Control lbl_email_registrado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._lbl_email_registrado2">
+<summary>
+Control lbl_email_registrado2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._lbl_email_nuevo">
+<summary>
+Control lbl_email_nuevo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._txt_email_nuevo">
+<summary>
+Control txt_email_nuevo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._lbl_msg_login">
+<summary>
+Control lbl_msg_login.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._rfv_usuario">
+<summary>
+Control rfv_usuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._rfv_usuario02">
+<summary>
+Control rfv_usuario02.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._btn_validar">
+<summary>
+Control btn_validar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._btn_regresar">
+<summary>
+Control btn_regresar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._RadAjaxManager1">
+<summary>
+Control RadAjaxManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._RadAjaxLoadingPanel1">
+<summary>
+Control RadAjaxLoadingPanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebConsulta.ReseteaPassword._RadScriptManager1">
+<summary>
+Control RadScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: load de la pagina
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.Recuperar_Datos">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: Permite recuperar informacion respecto al usuario
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.btn_email_Click(System.Object,System.EventArgs)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: Permite recuperar datos de ingreso
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.Inhabilitar(System.Boolean)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: Permite inhabilitar objetos
+ </summary>
+ <param name="valor"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.btn_validar_Click(System.Object,System.EventArgs)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: valida la recuperacion de datos para envio de mail y direcciona al login
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.ResetearPwd(System.String)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: funcion que establece el reeteo de datos
+ </summary>
+ <param name="password"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.Envio_Email">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: envio de mail
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebConsulta.ReseteaPassword.btn_regresar_Click(System.Object,System.EventArgs)">
+ <summary>
+ FECHA: 28/06/2012
+ AUTOR: MNAREA
+ MOTIVO: retorna al login
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

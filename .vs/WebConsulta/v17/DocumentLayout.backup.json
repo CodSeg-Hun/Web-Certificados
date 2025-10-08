@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mramos\\Desktop\\Navegador\\WebConsultaConReporte\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB0E2C2A-0347-41B6-9F06-91527810BF86}|WebConsulta\\WebConsulta.vbproj|c:\\users\\mramos\\desktop\\navegador\\webconsultaconreporte\\webconsulta\\script\\js\\jquery-1.3.2.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB0E2C2A-0347-41B6-9F06-91527810BF86}|WebConsulta\\WebConsulta.vbproj|solutionrelative:webconsulta\\script\\js\\jquery-1.3.2.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB0E2C2A-0347-41B6-9F06-91527810BF86}|WebConsulta\\WebConsulta.vbproj|c:\\users\\mramos\\desktop\\navegador\\webconsultaconreporte\\webconsulta\\script\\accordion\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DB0E2C2A-0347-41B6-9F06-91527810BF86}|WebConsulta\\WebConsulta.vbproj|solutionrelative:webconsulta\\script\\accordion\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "jquery-1.3.2.min.js",
+              "DocumentMoniker": "C:\\Users\\mramos\\Desktop\\Navegador\\WebConsultaConReporte\\WebConsulta\\Script\\js\\jquery-1.3.2.min.js",
+              "RelativeDocumentMoniker": "WebConsulta\\Script\\js\\jquery-1.3.2.min.js",
+              "ToolTip": "C:\\Users\\mramos\\Desktop\\Navegador\\WebConsultaConReporte\\WebConsulta\\Script\\js\\jquery-1.3.2.min.js",
+              "RelativeToolTip": "WebConsulta\\Script\\js\\jquery-1.3.2.min.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-07T20:50:11.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "jquery.js",
+              "DocumentMoniker": "C:\\Users\\mramos\\Desktop\\Navegador\\WebConsultaConReporte\\WebConsulta\\Script\\accordion\\jquery.js",
+              "RelativeDocumentMoniker": "WebConsulta\\Script\\accordion\\jquery.js",
+              "ToolTip": "C:\\Users\\mramos\\Desktop\\Navegador\\WebConsultaConReporte\\WebConsulta\\Script\\accordion\\jquery.js",
+              "RelativeToolTip": "WebConsulta\\Script\\accordion\\jquery.js",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAIwIIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-07T20:43:20.126Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

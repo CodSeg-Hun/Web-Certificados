@@ -1,0 +1,58 @@
+<?xml version="1.0" standalone="yes"?>
+<configuration>
+  <configSections>
+    <setting name="3SUpdateHashCode">
+      <value>39785641</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Debug">
+      <value>N</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="TipoConexion">
+      <value>ConexionParalelo</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="FormaConexion">
+      <value>SQL</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Mail">
+      <value>3SforBusiness@carsegsa.com</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="SmtpClient">
+      <value>10.100.89.34</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="MailError">
+      <value>mnarea@carsegsa.com</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Caption">
+      <value>3S | Strategic Software Solutions</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="Base">
+      <value>3S_FINAL_MIGRADA</value>
+      <estado>1</estado>
+    </setting>
+    <setting name="ConexionParaleloSQL">
+      <!--SUPERMAN-->
+      <value>A6CB354C31342EC4D88268AC3FCF45BAA56CDF20D498F250AE5C6920273381366C477BB7B83FE6794D528613FA348752BAFDC9CCDD42AB3E20D2CA0D9E72E63D43F1142A95C7AE1BB7CAC8E89851FF6CCBE31213FAD9D3B254A6A01460E3DF2ADCB95D14AFBC8AECFFD37AF259C4E132DE8287898E6B384C</value>
+      <!--BANSHEE-->
+      <!--<value>1B033C9EBD236CD087A6749AD94CC9D35F2302157F45A738308597793A5C41A97E707FD3DEF8BD95779075674DC00D258AC979A6F7147577186642ADBC79C3F238D0A4FB740AAE5A42B27EA949FA18034D7D134B3EE77C0E33A37CAF645912806FDC1AA8037DA3EEB5B7B5BBD087682E74647540B2C2C7143C718033F950384ED6777F612F733B54</value>-->
+      <!--HULK / 3S_MIGRACION -->
+      <!--<value>F8CE8F7A356E141A36E0321B222444955078B7DAF6FF6EDD433CEA8A7E688021D4FE61323A1D39BB6BDD8FBDD29A23B2DF142AFBE1613A037473BB5D92D1B70032B05FF278A60C5DEF2002343A55AA4530E7D379A9A2A08B9BB81DAE1D4F21B868CD95795F8B104220B329C991484B919D5CCFCEEE65904998524BAFBA8846EF</value>-->
+      <estado>1</estado>
+    </setting>
+    <setting name="ConexionParaleloWINDOWS">
+      <!--<value>06A129922A8384F6A8A1356CDD04FD06709EED626F664A25ADFD907C18D284812EA95FA72C03ACEF45B96CD86FF2A3F6647256BD081E07D053F51EC2CE478051DE887F05DDB89446AEF15EB6DBF614C2A091C4B5B6CB2AA8A86659E036C8BBF068DDA846B14D6F3675A4DEE50B86C7975AB0753E024FB7AD0233EDA42AACB87C3C9D1E607CFF3B61E979CE4B052707E0E0F11C5389A7BD46</value>
+      <estado>1</estado>-->
+    </setting>
+  </configSections>
+  <setting name="nuevoelemento">
+    <value>no lo se</value>
+    <estado>1</estado>
+  </setting>
+</configuration>

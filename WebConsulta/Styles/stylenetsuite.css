@@ -1,0 +1,168 @@
+﻿body {
+    background: #eff1f5;
+}
+
+#header{
+    display: none;
+}
+
+#content {
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 0 8px 0 rgba(195, 195, 195, 0.5);
+    border-radius: 5px;
+    background: #fff;
+    height: 460px;
+}
+
+#master_container {
+    background-image: none;
+    height:0;
+}
+
+.seccion_content_maestra{
+    height: 390px;
+    width: 1000px;
+}
+
+.seccion_content_maestra_titulo {
+    background-color: #fff;
+    color: #4d5f79;
+    font-weight: 700;
+}
+
+.seccion_toolbar_text {
+    background: transparent;
+}
+
+.seccion_content_maestra_titulo_corner {
+    display: none;
+}
+
+.info_main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fiedls {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 22px;
+    color:#4D5F79;
+    margin:10px 0;
+}
+
+.subtitle {
+    color: #303030;
+    font-size: 16px;
+    background-color: #dfe4eb;
+    padding: 3px 0px 3px 5px;
+}
+
+.acciones{
+    display: flex;
+    column-gap: 10px
+}
+
+.fields__label{
+    color: #6f6f6f;
+    font-size:16px
+}
+
+input#ctl00_ContentPlaceHolder1_txtChasis,
+input#ctl00_ContentPlaceHolder1_TxtMotor,
+input#ctl00_ContentPlaceHolder1_txtCodVehiculo,
+input#ctl00_ContentPlaceHolder1_txtConColor,
+input#ctl00_ContentPlaceHolder1_TxtConCliente,
+input#ctl00_ContentPlaceHolder1_txtConConcesionario,
+input#ctl00_ContentPlaceHolder1_txtConFinanciera,
+input#ctl00_ContentPlaceHolder1_txtConMarca,
+input#ctl00_ContentPlaceHolder1_txtConModelo,
+input#ctl00_ContentPlaceHolder1_txtConPlaca,
+input#ctl00_ContentPlaceHolder1_txtConTipo,
+input#ctl00_ContentPlaceHolder1_cbm_tipo_Input {
+    color: #262626;
+    font-size: 15px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: #fff;
+}
+
+td.rcbInputCell.rcbInputCellLeft {
+    border-left: solid 1px #cccccc;
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    background: #fff;
+}
+a#ctl00_ContentPlaceHolder1_cbm_tipo_Arrow {
+    border-top: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    background-image: none;
+}
+
+.header_table {
+    background: transparent;
+    background: #607799 !important;
+    background-color: #607799 !important;
+    color: white !important;
+}
+
+.item_table {
+    background: #fff;
+    color: #262626;
+}
+
+.item_table:hover {
+    background: #fff;
+    color: #262626;
+    border:none;
+    border-bottom: none;
+}
+
+div#ctl00_ContentPlaceHolder1_RadGridVehiculo {
+    border: none;
+    height: 15px !important;
+}
+
+.RadComboBox .rcbArrowCell a {
+    height: 22.5px !important;
+}
+
+#ctl00_ContentPlaceHolder1_cbm_tipo_Arrow {
+    border: none !important;
+}
+
+
+.cmbTipoc {
+    background: red;
+    background-color: white;
+    color: white;
+    margin: 0px;
+    height: 5px;
+}
+
+
+.RadComboBoxDropDown_Default .rcbList .rcbHovered {
+    background: #607799;
+    color: #fff;
+}
+
+.correo{
+    display: flex;
+    flex-direction: row;
+}
+
+.group_correo {
+    display: flex;
+    flex-direction: row;
+}
+
+th, td, li{
+    font-size: 14px;
+}
+
