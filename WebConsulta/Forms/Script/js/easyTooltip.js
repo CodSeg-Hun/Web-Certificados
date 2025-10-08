@@ -36,7 +36,8 @@
 				content = (options.useElement != "") ? $("#" + options.useElement).html() : content;
 				$(this).attr("title","");									  				
 				if (content != "" && content != undefined){			
-					$("body").append("<div id='"+ options.tooltipId +"'>"+ content +"</div>");		
+					$("body").append("<div id='" + options.tooltipId + "'></div>");
+					$("#" + options.tooltipId).text(content);
 					$("#" + options.tooltipId)
 						.css("position","absolute")
 						.css("top",(e.pageY - options.yOffset) + "px")
