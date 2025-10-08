@@ -28,7 +28,7 @@ window.$ = jQuery;
 
 // A simple way to check for HTML strings or ID strings
 // (both of which we optimize for)
-var quickExpr = /^[^<]*(<(.|\s)+>)[^>]*$|^#(\w+)$/;
+var quickExpr = /^[^<]*(<[\s\S]+>)[^>]*$|^#(\w+)$/;
 
 // Is it a simple selector
 var isSimple = /^.[^:#\[\.]*$/;
