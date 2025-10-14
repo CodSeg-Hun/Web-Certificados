@@ -36,7 +36,8 @@
 				content = (options.useElement != "") ? $("#" + options.useElement).html() : content;
 				$(this).attr("title","");									  				
 				if (content != "" && content != undefined){			
-					$("body").append("<div id='" + options.tooltipId + "'></div>");
+					var $tooltipDiv = $("<div></div>").attr("id", options.tooltipId);
+					$("body").append($tooltipDiv);
 					$("#" + options.tooltipId).text(content);
 					$("#" + options.tooltipId)
 						.css("position","absolute")
