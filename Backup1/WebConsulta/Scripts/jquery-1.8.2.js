@@ -5869,7 +5869,7 @@ jQuery.fn.extend({
 				( jQuery.support.leadingWhitespace || !rleadingWhitespace.test( value ) ) &&
 				!wrapMap[ ( rtagName.exec( value ) || ["", ""] )[1].toLowerCase() ] ) {
 
-				value = value.replace( rxhtmlTag, "<$1></$2>" );
+				// Removed unsafe expansion of self-closing HTML tags.
 
 				try {
 					for (; i < l; i++ ) {
