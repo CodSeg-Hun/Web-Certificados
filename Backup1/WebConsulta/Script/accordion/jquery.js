@@ -590,6 +590,8 @@ jQuery.extend = jQuery.fn.extend = function() {
 		if ( (options = arguments[ i ]) != null )
 			// Extend the base object
 			for ( var name in options ) {
+				// Prevent prototype pollution
+				if (name === "__proto__" || name === "constructor" || name === "prototype") continue;
 				// Prevent never-ending loop
 				if ( target === options[ name ] )
 					continue;
